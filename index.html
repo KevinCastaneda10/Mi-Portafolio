@@ -14,15 +14,15 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="/styles/reset.css" />
-    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
     <section id="inicio">
       <div class="contenido">
         <header>
           <div class="contenido-header">
-            <h1>~K.C</h1>
+            <!-- <h1>~Kevin Castañeda</h1> -->
             <nav id="nav" class="">
               <ul id="links">
                 <li>
@@ -51,23 +51,6 @@
             <div id="icono-nav" onclick="responsiveMenu()">
               <i class="fa-solid fa-bars"></i>
             </div>
-            <div class="redes">
-              <a
-                href="www.linkedin.com/in/kevin-castaneda-carreno"
-                target="_blank"
-                ><i class="fa-brands fa-linkedin"></i
-              ></a>
-              <a
-                href="https://www.facebook.com/kevincastaneda10sf/"
-                target="_blank"
-                ><i class="fa-brands fa-facebook"></i
-              ></a>
-              <a
-                href="https://www.instagram.com/kevin_castaneda10/"
-                target="_blank"
-                ><i class="fa-brands fa-square-instagram"></i
-              ></a>
-            </div>
           </div>
         </header>
         <div class="presentacion">
@@ -80,7 +63,7 @@
             Vivo en Bogotá, Colombia. Encantado de entrar es este gran universo
             de la tecnología, siempre con la disposición de aprender cosas
             nuevas que me ayuden a enriquecer mis conocimientos para poder
-            demostrar todas mis cualidades.
+            demostrar todas mis cualidades y poder crecer prefesionalmente.
           </p>
           <a href="#tecnologias">Ir a Mis Tecnologías</a>
         </div>
@@ -89,59 +72,65 @@
 
     <section id="sobremi">
       <div class="contenedor-foto">
-        <img src="img/Kevin Castañeda.jpg" alt="" />
+        <img src="./img/Kevin Castañeda.jpg" alt="" />
       </div>
       <div class="sobremi">
         <p class="titulo-seccion">Sobre Mi</p>
         <h2>Más sobre mi...</h2>
         <h3>Desarrollador Web Full Stack</h3>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. At facilis
-          deserunt rerum dolor vel temporibus, error quae eligendi sunt ipsum
-          quaerat saepe omnis magni accusantium, laborum dolores? Distinctio,
-          expedita labore?
+          Además de estar apasionado con el mundo de la programación, otra de
+          mis pasiones es el fútbol, tanto verlo y practicarlo, aunque no lo
+          practico últimamente por algunas lesiones, sigo muy de cerca el
+          deporte en el mundo.
         </p>
         <a href="#inicio">Descargar CV</a>
       </div>
     </section>
 
-    <section id="tecnologias">
-      <h3 class="titulo-seccion">Mis tecnologías Favoritas</h3>
+    <section id="tecnologias" class="tecFav">
+      <h3 class="titulo-seccion">Mis Tecnologías Favoritas</h3>
       <div class="fila">
         <div class="tecnologia">
-          <h4>Diseño de sitios Web</h4>
-          <img class="img-1" src="/img/html.png" alt="" />
+          <h4>Estructura de páginas web</h4>
+          <img class="img-1" src="./img/html.png" alt="" />
           <hr />
           <ul class="tecnologias-tag">
             <li>HTML</li>
           </ul>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga
-            pariatur sint, quisquam ipsum impedit eveniet?
+            Si bien esta tecnología es importante para estructurar una página
+            web, es una de las primordiales al momento de crear y desarrollar
+            una aplicación, ya que es desde donde se crea "el esqueleto" de la
+            página.
           </p>
         </div>
         <div class="tecnologia">
-          <h4>Diseño de sitios Web</h4>
-          <img class="img-css" src="/img/CSS.png" alt="" />
+          <h4>Estilos de páginas web</h4>
+          <img class="img-css" src="./img/CSS.png" alt="" />
           <hr />
           <ul class="tecnologias-tag">
             <li>CSS</li>
           </ul>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga
-            pariatur sint, quisquam ipsum impedit eveniet?
+            Esta tecnología es la que nos ayuda a dar cuerpo a nuestra página a
+            través de estilos con base a un requerimiento o un proyecto
+            asignado. Al igual que HTML, es importante al momento de desarrollar
+            una aplicación web.
           </p>
         </div>
         <div class="tecnologia">
-          <h4>Diseño de sitios Web</h4>
-          <img class="img-1" src="/img/JavaScript_logo.png" alt="" />
+          <h4>Interfaz de usuarios</h4>
+          <img class="img-1" src="./img/JavaScript_logo.png" alt="" />
           <hr />
           <ul class="tecnologias-tag">
             <li>JavaScript</li>
           </ul>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga
-            pariatur sint, quisquam ipsum impedit eveniet?
+            Este lenguaje de programación, al igual que las tecnologías
+            anteriores, es de suma importancia, ya que acompañado de varias
+            tecnologías más, son los que nos ayudan a que nuestra página tenga
+            una mejor interfaz de cara al usuario.
           </p>
         </div>
       </div>
@@ -150,12 +139,11 @@
     <section id="actividades">
       <h3 class="titulo-seccion">Mis Actividades favoritas</h3>
       <div class="contenedor-form">
-
         <form action="">
           <div class="fila mitad">
             <input
               id="title"
-              type="text"
+              type="url"
               placeholder="¿Cuál es tu actividad favorita?"
               class="input-mitad"
             />
@@ -164,7 +152,7 @@
             <input
               id="imgUrl"
               type="text"
-              placeholder="Adjunta URL de una imagen de tu actividad favorita"
+              placeholder="URL de tu actividad favorita"
               class="input-full"
             />
           </div>
@@ -187,12 +175,29 @@
     <footer>
       <div class="contenedor-footer">
         <h2 class="titulo-final">
-          Kevin Castañeda | Alumno Soy Henry - Carrera Desarrollador Web Full
-          Stack
+          ® Kevin Castañeda <br />
+          Alumno Soy Henry - Carrera Desarrollador Web Full Stack
+          <div class="redes">
+            <a
+              href="www.linkedin.com/in/kevin-castaneda-carreno"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/kevincastaneda10sf/"
+              target="_blank"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/kevin_castaneda10/"
+              target="_blank"
+              ><i class="fa-brands fa-square-instagram"></i
+            ></a>
+          </div>
         </h2>
       </div>
     </footer>
 
-    <script src="/scripts/index.js"></script>
+    <script src="./scripts/index.js"></script>
   </body>
 </html>

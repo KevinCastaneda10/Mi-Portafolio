@@ -1,4 +1,4 @@
-console.log("JavaScript cargado")
+//console.log("JavaScript cargado");
 function seleccionar(link) {
   var opciones = document.querySelectorAll("#links  a");
   opciones[0].className = "";
@@ -57,28 +57,17 @@ const prueba = new Repositoyy();
 
 console.log(prueba.getAllActivities("yoga", "es bueno para la salud", "img"));
 
-console.log(
-  prueba.createActivity(
-    "Fútbol",
-    "Deporte rey del mundo",
-    "https://steemitimages.com/1280x0/http://www.barbabbels.com/wp-content/uploads/2015/04/Koning-Voetbal.jpg"
-  )
-);
+// console.log(
+//   prueba.createActivity(
+//     "Fútbol",
+//     "Deporte rey del mundo",
+//     "https://steemitimages.com/1280x0/http://www.barbabbels.com/wp-content/uploads/2015/04/Koning-Voetbal.jpg"
+//   )
+// );
 
 prueba.deleteActivity(2);
 
 console.log(prueba.getAllActivities());
-
-// homework 03 DOM
-
-// Clase Activity
-// class Activity {
-//   constructor(title, description, imgUrl) {
-//     this.title = title;
-//     this.description = description;
-//     this.imgUrl = imgUrl;
-//   }
-// }
 
 // Clase Repository
 class Repository {
@@ -94,8 +83,8 @@ class Repository {
     return this.activities;
   }
 
-  deleteAllActivitis(){
-    this.activities = []
+  deleteAllActivitis() {
+    this.activities = [];
   }
 }
 
@@ -127,7 +116,7 @@ function renderActivities(container, repository) {
   container.innerHTML = ""; // Vaciar el contenedor
 
   const activities = repository.getAllActivities();
-  console.log(activities)
+  console.log(activities);
 
   activities.map((activity) => {
     const activityCard = activityToHTML(activity);
@@ -137,24 +126,24 @@ function renderActivities(container, repository) {
 
 // Función para manejar el evento del botón de agregar actividad
 function handleAddActivity(event) {
-  event.preventDefault()
-  console.log("entró");
+  event.preventDefault();
+  console.log("Información incompleta");
   const titleInput = document.getElementById("title").value;
   const descriptionInput = document.getElementById("description").value;
   const imgUrlInput = document.getElementById("imgUrl").value;
 
   // Validar datos completos
   if (!titleInput || !descriptionInput || !imgUrlInput) {
-    alert("Por favor complete todos los campos.");
+    alert("Por favor completa todos los campos.");
     return;
   }
 
   const newActivity = new Activity(titleInput, descriptionInput, imgUrlInput);
-  console.log("ACTIVIDAD ",  newActivity)
+  console.log("ACTIVIDAD ", newActivity);
   repository.addActivity(newActivity);
 
   renderActivities(activityContainer, repository);
-  return false
+  return false;
 }
 
 // Seleccionar elementos del DOM
@@ -172,11 +161,11 @@ function deleteActivity(event) {
   const card = event.target.closest(".activity-card");
   if (card) {
     card.remove();
-    repository.deleteAllActivitis()
+    repository.deleteAllActivitis();
     // También puedes eliminar la actividad del repositorio si lo deseas
   }
 }
 
 // Event listener para eliminar actividad al hacer clic en la tarjeta
 activityContainer.addEventListener("click", deleteActivity);
-console.log(deleteActivity);
+// console.log(deleteActivity);
